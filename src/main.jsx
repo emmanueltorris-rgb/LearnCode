@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { GoogleOAuthProvider } from '@react-oauth/google'
-import { BrowserRouter } from 'react-router-dom'
+import { HarshRouter } from 'react-router-dom'
 import App from './App.jsx'
 import { UserProvider } from './context/UserContext.jsx'
 import './index.css'
