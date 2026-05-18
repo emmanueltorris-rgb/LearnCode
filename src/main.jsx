@@ -6,7 +6,7 @@ import App from './App.jsx'
 import { UserProvider } from './context/UserContext.jsx'
 import './index.css'
 
-const clientId = import.meta.env.VITE_GOOGLE_CLIENT_ID || 'YOUR_GOOGLE_CLIENT_ID'
+const clientId = import.meta.env.VITE_GOOGLE_CLIENT_ID || '2129356645-g3qkmf4nncopac10hac1uaeivachne2h.apps.googleusercontent.com'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
