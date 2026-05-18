@@ -1,5 +1,3 @@
-Author: Najib Mahmud# Peer learning platform
-
 ## Overview
 
 The Peer Learning Platform is a web application designed to help students learn from one another through skill sharing and tutoring sessions. The platform creates a collaborative learning environment where users can teach skills they are confident in and book sessions to learn new topics from their peers.
