@@ -2,21 +2,21 @@
   "users": [
     {
       "id": "google_123",
-      "name": "Petter Muturi",
-      "email": "alice@example.com",
+      "name": "Anya Sharma",
+      "email": "anya.sharma@example.com",
       "picture": "",
       "role": "student"
     },
     {
       "id": "google_456",
-      "name": "Kelvin Murithi",
-      "email": "bob@example.com",
+      "name": "Keith Mwangi",
+      "email": "keith.mwangi@example.com",
       "picture": "",
       "role": "tutor"
     },
     {
       "id": "4oC_huG4fxw",
-      "name": "emmanuel torris",
+      "name": "Favour Kendi",
       "email": "torrisemanuel@gmail.com",
       "password": "3549Manu",
       "picture": null,
@@ -25,8 +25,8 @@
     },
     {
       "id": "7OGY55Q0_JM",
-      "name": "Najib Mahmud",
-      "email": "najib.mahmud@student.moringaschool.com",
+      "name": "Najib Amin",
+      "email": "najib.amin@student.moringaschool.com",
       "password": "Najib@806",
       "picture": null,
       "authMethod": "email",
@@ -34,9 +34,9 @@
     },
     {
       "id": "aJrWR3al-6M",
-      "name": "Safia Bulle",
-      "email": "safiabulle7@gmail.com",
-      "password": "Safia@21206",
+      "name": "Zainab Hassan",
+      "email": "zainab.hassan@gmail.com",
+      "password": "Zainab@21206",
       "picture": null,
       "authMethod": "email",
       "createdAt": "2026-05-16T11:33:44.000Z"
@@ -49,7 +49,7 @@
       "category": "Frontend",
       "description": "Learn React hooks, components, and state management from scratch.",
       "tutorId": "google_456",
-      "tutorName": "Petter Muturi",
+      "tutorName": "Keith Mwangi",
       "tutorPicture": "",
       "price": 25000,
       "availability": "open",
@@ -61,7 +61,7 @@
       "category": "Data Science",
       "description": "Master pandas, numpy, and matplotlib for data analysis.",
       "tutorId": "google_456",
-      "tutorName": "Petter Muturi",
+      "tutorName": "Keith Mwangi",
       "tutorPicture": "",
       "price": 30000,
       "availability": "open",
@@ -73,7 +73,7 @@
       "category": "Design",
       "description": "Learn color theory, typography, and Figma prototyping.",
       "tutorId": "google_123",
-      "tutorName": "Kelvin Murithi",
+      "tutorName": "Anya Sharma",
       "tutorPicture": "",
       "price": 20000,
       "availability": "closed",
@@ -85,7 +85,7 @@
       "category": "Backend",
       "description": "Build RESTful APIs and server-side applications with Node.js.",
       "tutorId": "google_456",
-      "tutorName": "Petter Muturi",
+      "tutorName": "Keith Mwangi",
       "tutorPicture": "",
       "price": 28000,
       "availability": "open",
@@ -97,7 +97,7 @@
       "category": "AI/ML",
       "description": "Introduction to supervised and unsupervised learning algorithms.",
       "tutorId": "google_123",
-      "tutorName": "Kelvin Murithi",
+      "tutorName": "Anya Sharma",
       "tutorPicture": "",
       "price": 35000,
       "availability": "open",
@@ -111,7 +111,7 @@
       "availability": "open",
       "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&q=80",
       "tutorId": "4oC_huG4fxw",
-      "tutorName": "emmanuel torris",
+      "tutorName": "Favour Kendi",
       "tutorPicture": null,
       "id": "Ov3qAqvYHLo"
     },
@@ -123,7 +123,7 @@
       "availability": "open",
       "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&q=80",
       "tutorId": "7OGY55Q0_JM",
-      "tutorName": "Najib Mahmud",
+      "tutorName": "Najib Amin",
       "tutorPicture": null,
       "id": "HygzyeEGVZM"
     },
@@ -135,7 +135,7 @@
       "availability": "open",
       "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&q=80",
       "tutorId": "7OGY55Q0_JM",
-      "tutorName": "Najib Mahmud",
+      "tutorName": "Najib Amin",
       "tutorPicture": null,
       "id": "sfVUlhxkHng"
     },
@@ -147,7 +147,7 @@
       "availability": "open",
       "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&q=80",
       "tutorId": "7OGY55Q0_JM",
-      "tutorName": "Najib Mahmud",
+      "tutorName": "Najib Amin",
       "tutorPicture": null,
       "id": "yV11s6UkCWQ"
     },
@@ -159,7 +159,7 @@
       "availability": "open",
       "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&q=80",
       "tutorId": "7OGY55Q0_JM",
-      "tutorName": "Najib Mahmud",
+      "tutorName": "Najib Amin",
       "tutorPicture": null,
       "id": "LYiOG8H13Jc"
     },
@@ -171,7 +171,7 @@
       "availability": "open",
       "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&q=80",
       "tutorId": "7OGY55Q0_JM",
-      "tutorName": "Najib Mahmud",
+      "tutorName": "Najib Amin",
       "tutorPicture": null,
       "id": "eCFnMtwoYlo"
     }
@@ -182,9 +182,9 @@
       "skillId": "1",
       "skillTitle": "React Fundamentals",
       "tutorId": "google_456",
-      "tutorName": "Petter Muturi",
+      "tutorName": "Keith Mwangi",
       "studentId": "google_123",
-      "studentName": "Kelvin Murithi",
+      "studentName": "Anya Sharma",
       "status": "confirmed",
       "date": "2026-05-20",
       "time": "14:00"
@@ -194,9 +194,9 @@
       "skillId": "3",
       "skillTitle": "UI/UX Design Principles",
       "tutorId": "google_123",
-      "tutorName": "Kelvin Murithi",
+      "tutorName": "Anya Sharma",
       "studentId": "google_456",
-      "studentName": "Petter Muturi",
+      "studentName": "Keith Mwangi",
       "status": "pending",
       "date": "2026-05-22",
       "time": "10:00"

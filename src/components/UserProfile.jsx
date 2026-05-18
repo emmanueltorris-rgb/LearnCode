@@ -79,7 +79,7 @@ export default function UserProfile() {
   return (
     <div className="max-w-2xl mx-auto bg-white rounded-2xl shadow-lg overflow-hidden">
       
-      <div className="bg-gradient-to-r from-blue-600 to-blue-800 px-6 md:px-8 py-8 text-white">
+      <div className="bg-gradient-to-r from-violet-600 to-violet-800 px-6 md:px-8 py-8 text-white">
         <div className="flex items-start justify-between">
           <div className="flex items-center gap-4">
             {user.picture ? (
@@ -95,7 +95,7 @@ export default function UserProfile() {
             )}
             <div>
               <h2 className="text-2xl font-bold">{user.name}</h2>
-              <p className="text-blue-100">{user.authMethod === 'google' ? 'Google Account' : 'Email Account'}</p>
+              <p className="text-violet-100">{user.authMethod === 'google' ? 'Google Account' : 'Email Account'}</p>
             </div>
           </div>
 
@@ -168,7 +168,7 @@ export default function UserProfile() {
                 placeholder="Tell us about yourself..."
                 disabled={isLoading}
                 rows="4"
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition disabled:bg-gray-50 disabled:cursor-not-allowed"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-violet-500 focus:border-transparent outline-none transition disabled:bg-gray-50 disabled:cursor-not-allowed"
               />
             </div>
 
@@ -176,7 +176,7 @@ export default function UserProfile() {
               <button
                 type="submit"
                 disabled={isLoading}
-                className="flex-1 bg-blue-600 text-white font-semibold py-3 rounded-lg hover:bg-blue-700 transition disabled:bg-gray-400 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+                className="flex-1 bg-violet-600 text-white font-semibold py-3 rounded-lg hover:bg-violet-700 transition disabled:bg-gray-400 disabled:cursor-not-allowed flex items-center justify-center gap-2"
               >
                 {isLoading ? (
                   <>
@@ -207,7 +207,7 @@ export default function UserProfile() {
           <div className="space-y-6">
             <div className="grid md:grid-cols-2 gap-6">
               <div className="flex items-center gap-3 p-4 bg-gray-50 rounded-lg">
-                <User className="w-5 h-5 text-blue-600" />
+                <User className="w-5 h-5 text-violet-600" />
                 <div>
                   <p className="text-xs text-gray-600 uppercase tracking-wide">Name</p>
                   <p className="font-medium text-gray-900">{user.name}</p>
@@ -215,7 +215,7 @@ export default function UserProfile() {
               </div>
 
               <div className="flex items-center gap-3 p-4 bg-gray-50 rounded-lg">
-                <Mail className="w-5 h-5 text-blue-600" />
+                <Mail className="w-5 h-5 text-violet-600" />
                 <div>
                   <p className="text-xs text-gray-600 uppercase tracking-wide">Email</p>
                   <p className="font-medium text-gray-900">{user.email}</p>
@@ -224,7 +224,7 @@ export default function UserProfile() {
 
               {user.phone && (
                 <div className="flex items-center gap-3 p-4 bg-gray-50 rounded-lg">
-                  <Phone className="w-5 h-5 text-blue-600" />
+                  <Phone className="w-5 h-5 text-violet-600" />
                   <div>
                     <p className="text-xs text-gray-600 uppercase tracking-wide">Phone</p>
                     <p className="font-medium text-gray-900">{user.phone}</p>
@@ -234,7 +234,7 @@ export default function UserProfile() {
 
               {user.location && (
                 <div className="flex items-center gap-3 p-4 bg-gray-50 rounded-lg">
-                  <MapPin className="w-5 h-5 text-blue-600" />
+                  <MapPin className="w-5 h-5 text-violet-600" />
                   <div>
                     <p className="text-xs text-gray-600 uppercase tracking-wide">Location</p>
                     <p className="font-medium text-gray-900">{user.location}</p>
@@ -252,7 +252,7 @@ export default function UserProfile() {
 
             {user.createdAt && (
               <div className="flex items-center gap-3 p-4 bg-gray-50 rounded-lg">
-                <Calendar className="w-5 h-5 text-blue-600" />
+                <Calendar className="w-5 h-5 text-violet-600" />
                 <div>
                   <p className="text-xs text-gray-600 uppercase tracking-wide">Joined</p>
                   <p className="font-medium text-gray-900">

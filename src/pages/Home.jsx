@@ -29,7 +29,7 @@ export default function Home() {
   return (
     <div>
       
-      <section className="relative bg-gradient-to-br from-primary-900 via-primary-800 to-primary-700 text-white overflow-hidden">
+      <section className="relative bg-slate-950 text-white overflow-hidden">
         <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28 relative">
           <div className="max-w-3xl">
@@ -39,23 +39,23 @@ export default function Home() {
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
               Learn Together.<br />
-              <span className="text-primary-300">Grow Together.</span>
+              <span className="text-violet-400">Grow Together.</span>
             </h1>
-            <p className="text-lg sm:text-xl text-primary-100 mb-8 leading-relaxed max-w-2xl">
+            <p className="text-lg sm:text-xl text-slate-300 mb-8 leading-relaxed max-w-2xl">
               A peer-to-peer learning platform where learners teach and learn from each other. 
               Share your expertise, book sessions, and accelerate your growth.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link
                 to="/explore"
-                className="inline-flex items-center gap-2 px-6 py-3 bg-white text-primary-700 rounded-xl font-semibold hover:bg-primary-50 transition-colors"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-white text-slate-950 rounded-xl font-semibold hover:bg-slate-100 transition-colors"
               >
                 Explore Skills
       
               </Link>
               <Link
                 to="/login"
-                className="inline-flex items-center gap-2 px-6 py-3 bg-primary-700/50 text-white border border-primary-400/30 rounded-xl font-semibold hover:bg-primary-700/70 transition-colors"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-violet-600 text-white rounded-xl font-semibold hover:bg-violet-700 transition-colors"
               >
                 Get Started
               </Link>
@@ -101,22 +101,22 @@ export default function Home() {
       </section>
 
       
-      <section className="py-20 bg-primary-600">
+      <section className="py-20 bg-violet-600">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-white mb-4">Ready to start learning?</h2>
-          <p className="text-primary-100 text-lg mb-8">
+          <p className="text-violet-100 text-lg mb-8">
             Join hundreds of Moringa students already sharing knowledge on the platform.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link
               to="/login"
-              className="px-8 py-3 bg-white text-primary-700 rounded-xl font-semibold hover:bg-primary-50 transition-colors"
+              className="px-8 py-3 bg-white text-violet-600 rounded-xl font-semibold hover:bg-slate-100 transition-colors"
             >
               Sign Up Now
             </Link>
             <Link
               to="/explore"
-              className="px-8 py-3 bg-primary-700 text-white border border-primary-500 rounded-xl font-semibold hover:bg-primary-800 transition-colors"
+              className="px-8 py-3 bg-slate-950 text-white border border-violet-400 rounded-xl font-semibold hover:bg-slate-900 transition-colors"
             >
               Browse Skills
             </Link>

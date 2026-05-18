@@ -33,7 +33,7 @@ export function AuthInput({
           disabled={disabled}
           className={`w-full px-4 py-3 ${
             isPasswordField ? 'pr-16' : ''
-          } border rounded-lg outline-none transition focus:ring-2 focus:ring-blue-500 disabled:bg-gray-50 disabled:cursor-not-allowed ${
+          } border rounded-lg outline-none transition focus:ring-2 focus:ring-violet-500 disabled:bg-gray-50 disabled:cursor-not-allowed ${
             error
               ? 'border-red-500 focus:ring-red-500'
               : 'border-gray-300'

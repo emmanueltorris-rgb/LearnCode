@@ -108,7 +108,7 @@ export default function Login() {
                   placeholder="Full Name"
                   value={formData.name}
                   onChange={handleChange}
-                  className={`w-full px-4 py-3 border rounded-lg outline-none transition focus:ring-2 focus:ring-blue-500 ${errors.name ? 'border-red-500' : 'border-gray-300'}`}
+                  className={`w-full px-4 py-3 border rounded-lg outline-none transition focus:ring-2 focus:ring-violet-500 ${errors.name ? 'border-red-500' : 'border-gray-300'}`}
                 />
                 {errors.name && <p className="text-xs text-red-500 mt-1">{errors.name}</p>}
               </div>
@@ -121,7 +121,7 @@ export default function Login() {
                 placeholder="Email Address"
                 value={formData.email}
                 onChange={handleChange}
-                className={`w-full px-4 py-3 border rounded-lg outline-none transition focus:ring-2 focus:ring-blue-500 ${errors.email ? 'border-red-500' : 'border-gray-300'}`}
+                className={`w-full px-4 py-3 border rounded-lg outline-none transition focus:ring-2 focus:ring-violet-500 ${errors.email ? 'border-red-500' : 'border-gray-300'}`}
               />
               {errors.email && <p className="text-xs text-red-500 mt-1">{errors.email}</p>}
             </div>
@@ -133,7 +133,7 @@ export default function Login() {
                 placeholder="Password"
                 value={formData.password}
                 onChange={handleChange}
-                className={`w-full px-4 py-3 border rounded-lg outline-none transition focus:ring-2 focus:ring-blue-500 ${errors.password ? 'border-red-500' : 'border-gray-300'}`}
+                className={`w-full px-4 py-3 border rounded-lg outline-none transition focus:ring-2 focus:ring-violet-500 ${errors.password ? 'border-red-500' : 'border-gray-300'}`}
               />
               {errors.password && <p className="text-xs text-red-500 mt-1">{errors.password}</p>}
             </div>
@@ -146,7 +146,7 @@ export default function Login() {
                   placeholder="Confirm Password"
                   value={formData.confirmPassword}
                   onChange={handleChange}
-                  className={`w-full px-4 py-3 border rounded-lg outline-none transition focus:ring-2 focus:ring-blue-500 ${errors.confirmPassword ? 'border-red-500' : 'border-gray-300'}`}
+                  className={`w-full px-4 py-3 border rounded-lg outline-none transition focus:ring-2 focus:ring-violet-500 ${errors.confirmPassword ? 'border-red-500' : 'border-gray-300'}`}
                 />
                 {errors.confirmPassword && <p className="text-xs text-red-500 mt-1">{errors.confirmPassword}</p>}
               </div>
@@ -155,7 +155,7 @@ export default function Login() {
             <button
               disabled={loading}
               type="submit"
-              className="w-full py-3 px-4 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition disabled:bg-gray-400"
+              className="w-full py-3 px-4 bg-violet-600 hover:bg-violet-700 text-white font-medium rounded-lg transition disabled:bg-gray-400"
             >
               {loading ? 'Processing...' : isSignUp ? 'Sign Up' : 'Login'}
             </button>
@@ -185,7 +185,7 @@ export default function Login() {
           <p className="text-sm text-center mt-6 text-gray-600">
             {isSignUp ? 'Already have an account?' : "Don't have an account?"}
             <button
-              className="text-blue-600 font-medium ml-1 hover:underline"
+              className="text-violet-600 font-medium ml-1 hover:underline"
               onClick={() => setIsSignUp(!isSignUp)}
             >
               {isSignUp ? 'Login' : 'Sign Up'}

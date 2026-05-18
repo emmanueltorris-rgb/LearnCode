@@ -26,7 +26,7 @@ export default function Navbar() {
           <div className="flex items-center">
             <Link to="/" className="text-xl font-bold tracking-tight">
               <span className="text-gray-900">Learn</span>
-              <span className="text-blue-600">Code</span>
+              <span className="text-violet-600">Code</span>
             </Link>
           </div>
 
@@ -38,8 +38,8 @@ export default function Navbar() {
                 to={link.to}
                 className={`text-sm font-medium transition-colors ${
                   isActive(link.to)
-                    ? 'text-blue-600 bg-blue-50 px-3 py-1.5 rounded-md'
-                    : 'text-gray-600 hover:text-blue-600'
+                    ? 'text-violet-600 bg-violet-50 px-3 py-1.5 rounded-md'
+                    : 'text-gray-600 hover:text-violet-600'
                 }`}
               >
                 {link.label}
@@ -54,7 +54,7 @@ export default function Navbar() {
 
                 <button
                   onClick={logout}
-                  className="text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors"
+                  className="text-sm font-medium text-gray-600 hover:text-violet-600 transition-colors"
                 >
                   Logout
                 </button>
@@ -62,7 +62,7 @@ export default function Navbar() {
             ) : (
               <Link
                 to="/login"
-                className="px-4 py-2 bg-blue-600 text-white rounded-md text-sm font-medium hover:bg-blue-700 transition-colors"
+                className="px-4 py-2 bg-violet-600 text-white rounded-md text-sm font-medium hover:bg-violet-700 transition-colors"
               >
                 Sign In
               </Link>
@@ -90,7 +90,7 @@ export default function Navbar() {
                 key={link.to}
                 to={link.to}
                 onClick={() => setMobileOpen(false)}
-                className={isActive(link.to) ? 'text-blue-600 font-semibold' : 'hover:text-blue-600'}
+                className={isActive(link.to) ? 'text-violet-600 font-semibold' : 'hover:text-violet-600'}
               >
                 {link.label}
               </Link>
@@ -106,7 +106,7 @@ export default function Navbar() {
                     logout()
                     setMobileOpen(false)
                   }}
-                  className="text-left hover:text-blue-600"
+                  className="text-left hover:text-violet-600"
                 >
                   Logout
                 </button>
@@ -115,7 +115,7 @@ export default function Navbar() {
               <Link
                 to="/login"
                 onClick={() => setMobileOpen(false)}
-                className="text-blue-600 font-semibold"
+                className="text-violet-600 font-semibold"
               >
                 Sign In
               </Link>

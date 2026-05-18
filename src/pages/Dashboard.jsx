@@ -62,7 +62,7 @@ export default function Dashboard() {
   if (loading) {
     return (
       <div className="min-h-[60vh] flex items-center justify-center">
-        <div className="w-10 h-10 border-4 border-gray-200 border-t-blue-600 rounded-full animate-spin" />
+        <div className="w-10 h-10 border-4 border-gray-200 border-t-violet-600 rounded-full animate-spin" />
       </div>
     )
   }
@@ -75,7 +75,7 @@ export default function Dashboard() {
           <h1 className="text-2xl font-bold text-gray-900">My Dashboard</h1>
           <p className="text-sm text-gray-500 mt-0.5">Manage your skills and track your sessions.</p>
         </div>
-        <button onClick={() => setShowForm(!showForm)} className="px-4 py-2 bg-blue-600 text-white rounded-lg text-sm font-medium shadow-sm">
+        <button onClick={() => setShowForm(!showForm)} className="px-4 py-2 bg-violet-600 text-white rounded-lg text-sm font-medium shadow-sm">
           {showForm ? 'Cancel' : '+ Add New Skill'}
         </button>
       </div>
@@ -101,7 +101,7 @@ export default function Dashboard() {
               <label className="block text-xs font-semibold text-gray-600 mb-1">Description</label>
               <textarea required value={description} onChange={e => setDescription(e.target.value)} rows="3" placeholder="Describe it..." className="w-full px-3 py-2 border rounded-lg text-sm bg-white" />
             </div>
-            <button type="submit" className="px-4 py-2 bg-blue-600 text-white rounded-lg text-sm font-medium self-start">Save Skill</button>
+            <button type="submit" className="px-4 py-2 bg-violet-600 text-white rounded-lg text-sm font-medium self-start">Save Skill</button>
           </div>
         </form>
       )}
@@ -111,7 +111,7 @@ export default function Dashboard() {
         <button
           onClick={() => setActiveTab('teach')}
           className={`px-4 py-1.5 text-xs font-semibold rounded-md transition-colors ${
-            activeTab === 'teach' ? 'bg-blue-50 text-blue-600' : 'bg-gray-50 text-gray-600'
+            activeTab === 'teach' ? 'bg-violet-50 text-violet-600' : 'bg-gray-50 text-gray-600'
           }`}
         >
           Skills I Teach ({mySkills.length})
@@ -119,7 +119,7 @@ export default function Dashboard() {
         <button
           onClick={() => setActiveTab('booked')}
           className={`px-4 py-1.5 text-xs font-semibold rounded-md transition-colors ${
-            activeTab === 'booked' ? 'bg-blue-50 text-blue-600' : 'bg-gray-50 text-gray-600'
+            activeTab === 'booked' ? 'bg-violet-50 text-violet-600' : 'bg-gray-50 text-gray-600'
           }`}
         >
           Sessions Booked ({myBookings.length})
@@ -139,7 +139,7 @@ export default function Dashboard() {
                 </span>
                 <h3 className="text-base font-bold text-gray-900 mb-1">{skill.title}</h3>
                 <p className="text-sm text-gray-500 line-clamp-2">{skill.description}</p>
-                <div className="mt-4 pt-3 border-t text-xs text-blue-600 font-bold">ksh {skill.price}/hr</div>
+                <div className="mt-4 pt-3 border-t text-xs text-violet-600 font-bold">ksh {skill.price}/hr</div>
               </div>
             ))}
           </div>
@@ -159,7 +159,7 @@ export default function Dashboard() {
                     alt={booking.title}
                     className="w-full h-full object-cover"
                   />
-                  <span className="absolute top-3 left-3 bg-blue-600 text-white text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wider">
+                  <span className="absolute top-3 left-3 bg-violet-600 text-white text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wider">
                     {booking.category}
                   </span>
                 </div>

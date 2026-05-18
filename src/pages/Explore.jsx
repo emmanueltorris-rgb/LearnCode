@@ -40,7 +40,7 @@ export default function Explore() {
   if (loading) {
     return (
       <div className="min-h-[60vh] flex items-center justify-center">
-        <div className="w-10 h-10 border-4 border-gray-200 border-t-blue-600 rounded-full animate-spin" />
+        <div className="w-10 h-10 border-4 border-gray-200 border-t-violet-600 rounded-full animate-spin" />
       </div>
     )
   }
@@ -54,19 +54,19 @@ export default function Explore() {
             value={search}
             onChange={(e) => setSearch(e.target.value)}
             placeholder="Search by skill, description, or tutor..."
-            className="w-full px-4 py-2.5 bg-gray-50 border border-gray-200 rounded-lg text-sm focus:outline-none focus:border-blue-500 transition-colors"
+            className="w-full px-4 py-2.5 bg-gray-50 border border-gray-200 rounded-lg text-sm focus:outline-none focus:border-violet-500 transition-colors"
           />
 
           {/* Horizontal Category Pill Filters */}
-          <div className="flex gap-2 overflow-x-auto pb-1 text-xs font-medium text-gray-500">
+          <div className="flex gap-2 overflow-x-auto pb-1 text-xs font-medium">
             {categories.map((cat) => (
               <button
                 key={cat}
                 onClick={() => setSelectedCategory(cat)}
                 className={`px-3 py-1.5 rounded-md transition-colors whitespace-nowrap ${
                   selectedCategory === cat
-                    ? 'bg-gray-100 text-gray-900 font-semibold'
-                    : 'hover:bg-gray-50 hover:text-gray-900'
+                    ? 'bg-violet-600 text-white font-semibold'
+                    : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
                 }`}
               >
                 {cat}
@@ -96,13 +96,13 @@ export default function Explore() {
                 alt={skill.title}
                 className="w-full h-full object-cover"
               />
-              <span className="absolute top-3 left-3 bg-gray-900/80 backdrop-blur-sm text-white text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wider">
+              <span className="absolute top-3 left-3 bg-slate-900/90 backdrop-blur-sm text-white text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wider">
                 {skill.category}
               </span>
             </div>
 
             <div className="p-5 flex flex-col flex-grow">
-              <h2 className="text-base font-bold text-gray-900 group-hover:text-blue-600 transition-colors mb-1.5">
+              <h2 className="text-base font-bold text-gray-900 group-hover:text-violet-600 transition-colors mb-1.5">
                 {skill.title}
               </h2>
               <p className="text-sm text-gray-500 line-clamp-2 mb-4 flex-grow">
@@ -111,7 +111,7 @@ export default function Explore() {
 
               <div className="flex justify-between items-center pt-3 border-t border-gray-100 text-xs">
                 <span className="text-gray-600 font-medium">{skill.tutorName || 'Community Tutor'}</span>
-                <span className="text-blue-600 font-bold text-sm">
+                <span className="text-violet-600 font-semibold text-sm">
                   ksh{skill.price || '0'}<span className="text-gray-400 font-normal text-xs">/hr</span>
                 </span>
               </div>

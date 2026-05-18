@@ -53,7 +53,7 @@ export default function SkillDetails() {
   if (loading) {
     return (
       <div className="min-h-[60vh] flex items-center justify-center">
-        <div className="w-10 h-10 border-4 border-gray-200 border-t-blue-600 rounded-full animate-spin" />
+        <div className="w-10 h-10 border-4 border-gray-200 border-t-violet-600 rounded-full animate-spin" />
       </div>
     )
   }
@@ -61,7 +61,7 @@ export default function SkillDetails() {
   return (
     <div className="max-w-3xl mx-auto px-6 py-12">
       <div className="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm">
-        <span className="bg-blue-50 text-blue-600 text-xs font-bold px-3 py-1 rounded-md uppercase tracking-wider">
+        <span className="bg-violet-50 text-violet-600 text-xs font-bold px-3 py-1 rounded-md uppercase tracking-wider">
           {skill.category}
         </span>
         
@@ -85,7 +85,7 @@ export default function SkillDetails() {
             className={`px-6 py-2.5 rounded-lg text-sm font-medium transition-colors ${
               booked 
                 ? 'bg-green-100 text-green-700 cursor-not-allowed' 
-                : 'bg-blue-600 text-white hover:bg-blue-700 shadow-sm'
+                : 'bg-violet-600 text-white hover:bg-violet-700 shadow-sm'
             }`}
           >
             {booked ? 'Booking Confirmed!' : 'Request Session'}
