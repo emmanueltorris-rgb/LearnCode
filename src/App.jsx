@@ -1,4 +1,5 @@
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, useNavigate } from 'react-router-dom'
+import { useEffect } from 'react'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import ProtectedRoute from './components/ProtectedRoute'
@@ -9,6 +10,20 @@ import Dashboard from './pages/Dashboard'
 import Login from './pages/Login'
 
 function App() {
+  const navigate = useNavigate()
+
+  useEffect(() => {
+    // Handle GitHub Pages 404 redirect
+    const params = new URLSearchParams(window.location.search)
+    const redirect = params.get('redirect')
+    
+    if (redirect) {
+      // Remove the redirect parameter and navigate to the intended route
+      window.history.replaceState(null, '', window.location.pathname)
+      navigate(redirect)
+    }
+  }, [navigate])
+
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />

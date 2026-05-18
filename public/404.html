@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LearnCode</title>
+    <script>
+      // GitHub Pages 404 handling for single-page apps
+      // Redirect path to home page with original path in query parameter
+      const pathSegments = window.location.pathname.split('/').filter(Boolean);
+      // Remove 'LearnCode' from segments
+      const routePath = '/' + pathSegments.slice(1).join('/');
+      
+      // Redirect to index with the original path preserved
+      window.location.replace(
+        '/LearnCode/?redirect=' + encodeURIComponent(routePath + window.location.search)
+      );
+    </script>
+  </head>
+  <body>
+    <noscript>Please enable JavaScript to use this application.</noscript>
+  </body>
+</html>
